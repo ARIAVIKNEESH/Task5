@@ -1,0 +1,59 @@
+//1. Write a person class that holds the details:
+
+class Person {
+  constructor(name,age,gender,address,number,email,bloodGroup,dateOfBirth,highestDegree) {
+    this.name=name;
+    this.age=age;
+    this.gender=gender;
+    this.address=address;
+    this.number=number;
+    this.email=email;
+    this.bloodGroup=bloodGroup;
+    this.dateOfBirth=dateOfBirth;
+    this.highestDegree=highestDegree;
+}
+Output() {
+    console.log(`Name: ${this.name}`);
+    console.log(`Age: ${this.age}`);
+    console.log(`Gender: ${this.gender}`);
+    console.log(`Address: ${this.address}`);
+    console.log(`Number: ${this.number}`);
+    console.log(`Email: ${this.email}`);
+    console.log(`Blood Group: ${this.bloodGroup}`);
+    console.log(`Date of Birth: ${this.dateOfBirth}`);
+    console.log(`Highest Degree: ${this.highestDegree}`);
+  }
+}
+const Detail =new Person(
+  'Aria Vikneesh',18,'Male','ABC street','12345678','usaria2005@gmail.com','B+','11/11/11','B.Tech'
+);
+Detail.Output();
+
+
+//2. Write a class to calculate uber price
+
+class Uber {
+  constructor(start,end,ratePerMile) {
+    this.start=start;
+    this.end=end;
+    this.rate=rate;
+    this.Distance=Distance;
+  }
+Cost() {
+    const total=this.Distance *this.rate;
+    return total;
+  }
+}
+const Distance=100;
+const start="A";
+const end="B";
+const rate=2.5;
+const uber=new Uber(start,end,rate);
+console.log(`Start Point: ${uber.start}`);
+console.log(`End Point: ${uber.end}`);
+console.log(`Total Distance: ${uber.Distance} KM`);
+
+const cost = uber.Cost();
+console.log(`Total Cost(in Rs.): ${cost.toFixed(1)}`);
+
+
